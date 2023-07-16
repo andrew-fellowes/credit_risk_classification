@@ -11,7 +11,7 @@ We sought to predict the dependent variable, loan status, given the independent 
 The analysis used a simple hold-out validation type approach in which we used most of the data to train the model and split out a small portion to test the model. The following steps were followed:
 
 * We separated out the dependent variable from the independent variables.
-* We randomly split the dataset into a training set and a test set. Here we forced the use of 90% of the data for training and only 10% for testing.
+* We randomly split the dataset into a training set and a test set. Here we forced the use of 90% of the data for training and only 10% for testing. We observed the class ration was preserved between training and test sets.
 * We set up a logistic regression model using the python sklearn library and fit the training data.
 * We used the model to predict the loan status in the test set, using the independent variables from the test set as input.
 * Finally, we evaluated our model's performance compared to the test set's loan status as the source of truth.
